@@ -13,7 +13,7 @@ namespace lab3.Tests
         private static LoginHelper loginHelper = new LoginHelper();
 
         [Test]
-        public static void CorrectLogin()
+        public static void CorrectLoginTest()
         {
             string email = "dzmarianadz@gmail.com";
             string password = "QA_lab3_test";
@@ -27,7 +27,7 @@ namespace lab3.Tests
 
 
         [Test]
-        public static void InCorrectLogin()
+        public static void InCorrectLoginTest()
         {
             string email = "dzmarianadz@gmail.com";
             string password = "12345678";

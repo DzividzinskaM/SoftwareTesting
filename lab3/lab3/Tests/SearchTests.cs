@@ -13,7 +13,7 @@ namespace lab3.Tests
     {
         private static SearchHelper searchHelper = new SearchHelper();
         [Test]
-        public void ShowTips()
+        public void ShowTipsTest()
         {
             string searchRequest = "с";
 
@@ -22,7 +22,7 @@ namespace lab3.Tests
         }
 
         [Test]
-        public void SearchIsCorrect()
+        public void SearchIsCorrectTest()
         {
             string searchRequest = "сумки";
 
