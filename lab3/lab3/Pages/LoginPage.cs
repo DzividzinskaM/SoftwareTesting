@@ -16,7 +16,8 @@ namespace lab3
     {
 
         private const string LOGIN_PAGE_LINK = "(.//*[@href=\"https://www.zara.com/ua/uk/logon\"]//span)[1]";
-        private const string EMAIL_FIELD = ".//*[@name=\"email\"]";
+      //  private const string EMAIL_FIELD = ".//*[@name=\"email\"]";
+        private const string EMAIL_FIELD = "email";
         private const string PASSWORD_FIELD = ".//*[@type=\"password\"]";
         private const string LOGIN_BUTTON = ".form__footer > .button";
         private const string MODAL_WINDOW = ".modal__container";
@@ -25,7 +26,7 @@ namespace lab3
         [FindsBy(How = How.XPath, Using = LOGIN_PAGE_LINK)]
         public IWebElement loginLink;
 
-        [FindsBy(How = How.XPath, Using = EMAIL_FIELD)]
+        [FindsBy(How = How.Name, Using = EMAIL_FIELD)]
         public IWebElement emailField;
 
         [FindsBy(How = How.XPath, Using = PASSWORD_FIELD)]
