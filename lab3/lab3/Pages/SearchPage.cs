@@ -12,7 +12,7 @@ namespace lab3.Pages
     public class SearchPage : BaseObject
     {
 
-        private const string SEARCH_PAGE_LINK = ".layout-header-search-bar__text";
+        private const string SEARCH_PAGE_LINK = ".//*[@class=\"layout-header-search-bar__text\"]";
         private const string SEARCH_FIELD_ID = "search-term";
         private const string TIPS_ID= ".topTerms > :nth-child(1)";
         private const string PRODUCT_RESULT_LIST = ".product-grid__product-list";
