@@ -14,7 +14,7 @@ namespace lab3.Pages
 
         private const string SEARCH_PAGE_LINK = ".layout-header-search-bar__text";
         private const string SEARCH_FIELD_ID = "search-term";
-        private const string TIPS_ID= "topTerms";
+        private const string TIPS_ID= ".topTerms > :nth-child(1)";
         private const string PRODUCT_RESULT_LIST = ".product-grid__product-list";
         private const string SEARCH_IS_NOT_SUCCESFULL_MSG = "otherResults";
 
