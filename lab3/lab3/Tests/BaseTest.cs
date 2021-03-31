@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using java.sql;
+using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
 
 namespace lab3.Tests
@@ -12,11 +13,10 @@ namespace lab3.Tests
         [OneTimeSetUp]
         public void beforeClass()
         {
-            Driver = new ChromeDriver("D:/Fork/qa-course/lab3/resources/chromedriver.exe");
 
-            /*var options = new ChromeOptions();
-            options.BinaryLocation = "C:/jenkins";
-            Driver = new ChromeDriver(options);*/
+            
+            Driver = new ChromeDriver("D:/Fork/qa-course/lab3/resources");
+
 
 
             /*C:\jenkins*/
