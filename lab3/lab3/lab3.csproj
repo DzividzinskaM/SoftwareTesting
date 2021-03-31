@@ -51,9 +51,6 @@
     <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="Tests\LoginTests.cs" />
     <Compile Include="Tests\SearchTests.cs" />
-    <Compile Include="Utils.cs" />
-    <Compile Include="WebDriverSettings.cs" />
-    <Compile Include="Demo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
