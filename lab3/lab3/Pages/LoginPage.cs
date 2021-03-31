@@ -16,7 +16,7 @@ namespace lab3
     {
 
         private const string LOGIN_PAGE_LINK = "(.//*[@href=\"https://www.zara.com/ua/uk/logon\"]//span)[1]";
-      //  private const string EMAIL_FIELD = ".//*[@name=\"email\"]";
+       //  private const string EMAIL_FIELD = ".//*[@name=\"email\"]";
         private const string EMAIL_FIELD = "email";
         private const string PASSWORD_FIELD = ".//*[@type=\"password\"]";
         private const string LOGIN_BUTTON = ".form__footer > .button";

@@ -14,26 +14,24 @@ namespace lab3.Tests
     {
         //public IWebDriver driver;
 
+        private string baseUrl = "https://www.zara.com/ua/";
+
         [OneTimeSetUp]
         public void beforeClass()
         {
             Driver = new ChromeDriver("D:/Fork/qa-course/lab3/resources");
-            //Selenium = new DefaultSelenium()
-            //Selenium.Start();
-            //Selenium.WindowMaximize();
         }
 
         [SetUp]
         public void beforeTest()
         {
-            Driver.Navigate().GoToUrl(Utils.baseUrl);
+            Driver.Navigate().GoToUrl(baseUrl);
         }
 
         [OneTimeTearDown]
         public void afterClass()
         {
             Driver.Close();
-           // Selenium.Close();
         }
 
 

@@ -35,6 +35,7 @@ namespace lab3.Pages
         public SearchPage GoToSearchPage()
         {
             searchPageLink.Click();
+            //Thread.Sleep(10000);
             return GetSearchPage();  
         }
 

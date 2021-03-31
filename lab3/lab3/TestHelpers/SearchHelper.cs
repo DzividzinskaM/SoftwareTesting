@@ -29,14 +29,14 @@ namespace lab3.TestHelpers
         }
         public SearchHelper AssertProductListIsShown()
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
             searchPage.AssetsSearchList();
             return this;
         }
 
         public SearchHelper AssertMeesage()
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
             searchPage.AssetsUnseccesfullSearchMsg();
             return this;
         }
