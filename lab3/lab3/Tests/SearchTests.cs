@@ -6,7 +6,7 @@ namespace lab3.Tests
     [TestFixture]
     class SearchTests : BaseTest
     {
-        private static SearchHelper searchHelper = new SearchHelper();
+      /*  private static SearchHelper searchHelper = new SearchHelper();
         [Test]
         public void ShowTipsTest()
         {
@@ -32,6 +32,6 @@ namespace lab3.Tests
 
             searchHelper.Search(searchRequest)
                 .AssertMeesage();
-        }
+        }*/
     }
 }

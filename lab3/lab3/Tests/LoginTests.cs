@@ -7,7 +7,7 @@ namespace lab3.Tests
     {
         private static LoginHelper loginHelper = new LoginHelper();
 
-        [Test]
+/*        [Test]
         public static void CorrectLoginTest()
         {
             string email = "dzmarianadz@gmail.com";
@@ -18,7 +18,7 @@ namespace lab3.Tests
             loginHelper
                 .Login(email, password)
                 .AssertUserName(expectedUserName);
-        }
+        }*/
 
 
         [Test]
