@@ -12,8 +12,12 @@ namespace lab3.Tests
         [OneTimeSetUp]
         public void beforeClass()
         {
-            /*Driver = new ChromeDriver("D:/Fork/qa-course/lab3/resources");*/
-            Driver = new ChromeDriver("C:/jenkins");
+            Driver = new ChromeDriver("D:/Fork/qa-course/lab3/resources/chromedriver.exe");
+
+            /*var options = new ChromeOptions();
+            options.BinaryLocation = "C:/jenkins";
+            Driver = new ChromeDriver(options);*/
+
 
             /*C:\jenkins*/
 
