@@ -10,7 +10,7 @@ namespace lab3.Tests
         [Test]
         public static void CorrectLoginTest()
         {
-            string email = "dzmarianad";
+            string email = "email";
             string password = "QA_lab3_test";
 
             string expectedUserName = "Mariana";
