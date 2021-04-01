@@ -1,4 +1,4 @@
-﻿using java.sql;
+﻿
 using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
 
@@ -14,12 +14,8 @@ namespace lab3.Tests
         public void beforeClass()
         {
 
-            
+
             Driver = new ChromeDriver("D:/Fork/qa-course/lab3/resources");
-
-
-
-            /*C:\jenkins*/
 
         }
 
