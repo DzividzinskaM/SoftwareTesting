@@ -119,14 +119,9 @@ namespace Lab6Test
                     modelsLst.Add(new CertificteModel
                     {
                         ID = strs[0],
-                        /*           Owner = strs[1],
-                                   OwnerAddress = strs[2],
-                                   Station = strs[3],*/
                         OwnerAddress = strs[1],
                         Certificate = strs[2],
-                        Class = strs[3],
-                      /*  Term = strs[4]*/
-                        /*Term = strs[7]*/
+                        Class = strs[3]
                     });
                 }
 
@@ -141,6 +136,7 @@ namespace Lab6Test
             int coincidenceNum = 0;
             int differencesNum = 0;
             int length = expecLst.Count > actualLst.Count ? actualLst.Count : expecLst.Count;
+            createHeaderCertificate(filePath);
             for (int i = 0; i < length; i++)
             {
                 if (isIdentical(expecLst[i], actualLst[i]))
@@ -158,21 +154,6 @@ namespace Lab6Test
                 else
                     str += ";;";
 
-           /*     if (expecLst[i].Owner != actualLst[i].Owner)
-                    str += $"{expecLst[i].Owner};{actualLst[i].Owner}";
-                else
-                    str += ";;";
-
-                if (expecLst[i].OwnerAddress != actualLst[i].OwnerAddress)
-                    str += $"{expecLst[i].OwnerAddress};{actualLst[i].OwnerAddress}";
-                else
-                    str += ";;";
-
-                if (expecLst[i].Station != actualLst[i].Station)
-                    str += $"{expecLst[i].Station};{actualLst[i].Station}";
-                else
-                    str += ";;";*/
-
                 if (expecLst[i].OwnerAddress != actualLst[i].OwnerAddress)
                     str += $"{expecLst[i].OwnerAddress};{actualLst[i].OwnerAddress}";
                 else
@@ -188,13 +169,9 @@ namespace Lab6Test
                 else
                     str += ";;";
 
-          /*      if (expecLst[i].Term != actualLst[i].Term)
-                    str += $"{expecLst[i].Term};{actualLst[i].Term}";
-                else
-                    str += ";;";
-                */
 
-                var fs = new FileStream(filePath, FileMode.OpenOrCreate);
+
+                var fs = new FileStream(filePath, FileMode.Append);
                 using (StreamWriter sw = new StreamWriter(fs, Encoding.UTF8))
                 {
                     sw.WriteLine(str);
@@ -203,6 +180,17 @@ namespace Lab6Test
             }
             createLog("Certificate tables", fileLogPath, coincidenceNum, differencesNum);
             return isDiff;
+        }
+
+        private void createHeaderCertificate(string filePath)
+        {
+            var fs = new FileStream(filePath, FileMode.OpenOrCreate);
+            using (StreamWriter sw = new StreamWriter(fs, Encoding.UTF8))
+            {
+                sw.WriteLine("ID-expected;ID-actual;Owner address-expected;Owner address-actual;" +
+                     "Class-expected;Class-actual;Certificate-expected;Certificate-actual");
+            }
+
         }
 
         private bool isIdentical(CertificteModel expected, CertificteModel actual)
