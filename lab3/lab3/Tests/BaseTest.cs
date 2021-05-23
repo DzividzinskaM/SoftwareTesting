@@ -6,8 +6,6 @@ namespace lab3.Tests
 {
     class BaseTest : BaseObject
     {
-        //public IWebDriver driver;
-
         private string baseUrl = "https://www.zara.com/ua/";
 
         [OneTimeSetUp]
@@ -15,7 +13,6 @@ namespace lab3.Tests
         {
 
             Driver = new FirefoxDriver();
-            /*Driver = new ChromeDriver("D:/Fork/qa-course/lab3/resources");*/
 
         }
 
