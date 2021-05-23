@@ -12,8 +12,6 @@ namespace lab5.Steps
 
     public class GetSearchMoviesSteps : BaseSteps
     {
-        /*public RestClient client = new RestClient("https://api.themoviedb.org/3/");
-        public RestRequest request = new RestRequest();*/
         public IRestResponse response = new RestResponse<List<Movie>>();
         public SearchResult<Movie> searchResult;
         
