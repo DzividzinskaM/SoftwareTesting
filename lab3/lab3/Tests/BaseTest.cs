@@ -11,9 +11,7 @@ namespace lab3.Tests
         [OneTimeSetUp]
         public void beforeClass()
         {
-
             Driver = new FirefoxDriver();
-
         }
 
         [SetUp]
@@ -27,7 +25,6 @@ namespace lab3.Tests
         {
             Driver.Close();
         }
-
 
     }
 }
